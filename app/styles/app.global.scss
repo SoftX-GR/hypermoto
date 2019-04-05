@@ -1,0 +1,132 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+//@import "~@fortawesome/fontawesome-free/css/all.css";
+
+
+// Fonts
+//@import url('https://fonts.googleapis.com/css?family=Nunito');
+//@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+//@import url('../assets/fonts/noto-sans/noto-sans.css');
+
+//@import '~roboto-fontface/css/roboto/sass/roboto-fontface';
+
+// Variables
+//@import 'variables';
+
+// Bootstrap
+// @import '~bootstrap/scss/bootstrap';
+//@import '~react-accessible-accordion/dist/fancy-example.css';
+
+
+//@import '~material-components-web/dist/material-components-web.min';
+@import '~react-accessible-accordion/dist/fancy-example';
+@import '~react-splitter-layout/lib/index';
+@import '~bootstrap-scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+
+html, body, #app { height: 100% }
+
+#app {
+     color: blue;
+}
+
+.splitter-layout > .layout-splitter {
+    background-color: transparent;
+}
+
+.splitter-layout .layout-splitter:hover {
+    -webkit-transition: background-color 100ms linear;
+    -ms-transition: background-color 100ms linear;
+    transition: background-color 100ms linear;
+}
+
+.accordion {
+    border: none;
+    .accordion__title {
+        padding: 10px;
+        outline: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        h3 {
+            font-size: 1em;
+        }
+        .accordion__arrow {
+            margin-top: -7px;
+        }
+    }
+    .accordion__body {
+        background-color: #fff;
+        //border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .accordion__item + .accordion__item {
+        border-top: none;
+    }
+}
+
+.inlineMenuList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    line-height: 2em;
+  }
+}
+
+
+.custom-control-lg .custom-control-label::before,
+.custom-control-lg .custom-control-label::after {
+    top: 0.1rem !important;
+    left: -2rem !important;
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+}
+
+.custom-control-lg .custom-control-label {
+    margin-left: 0.5rem !important;
+    font-size: 1rem !important;
+}
+
+.chrome-tabs {
+    border-radius: 0;
+
+    .chrome-tabs-bottom-bar {
+        z-index: unset;
+    }
+
+    /*.chrome-tab {
+        width: 258px;
+        &:nth-child(1) {
+            transform: translate3d(0px, 0, 0);
+        }
+        &:nth-child(2) {
+            transform: translate3d(239px, 0, 0)
+        }
+    }*/
+}
+
+
+/* TitleBar fixes -------------------------------------------------------------------- */
+
+.titleBarContainer {
+    > div {
+        box-sizing: initial;
+    }
+
+    button {
+        cursor: default;
+    }
+
+    hr {
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }
+}
